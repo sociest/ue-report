@@ -4,7 +4,7 @@ project:
 manuscript:
   article: index.ipynb
   #code-links:
-  manuscript-url: sociest.org
+  manuscript-url: https://sociest.github.io/ue-report/
   #meca-bundle
   #notebooks:
   #  - notebook: notebooks/notebook.ipynb
