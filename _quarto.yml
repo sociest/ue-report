@@ -1,15 +1,15 @@
 project: 
   type: manuscript
 
+execute:
+  freeze: true
+
 manuscript:
   article: index.ipynb
-  #code-links:
   manuscript-url: https://sociest.github.io/ue-report/
-  #meca-bundle
-  #notebooks:
-  #  - notebook: notebooks/notebook.ipynb
-  #    title: Article Notebook
-  #    download-url: notebooks/notebook.ipynb
+  code-links:
+    - repo
+    - binder
   resources:
     - assets/data/database.csv
     - assets/data/municipios339.shp
@@ -18,22 +18,27 @@ manuscript:
 
 format:
   html:
-    comments: false
-  #    giscus: 
-  #      repo: sociest/ue-report
-  #      category: Q&A
-  #      mapping: title
-  #      reactions-enabled: true
-  #      theme:
-  #        light: light
-  #        dark: dark_dimmed
-  #      language: es
+    theme: cosmo
+    toc-location: left
+    comments:
+      giscus: 
+         repo: sociest/ue-report
+         category: Q&A
+         mapping: title
+         reactions-enabled: true
+         theme:
+           light: light
+           dark: dark_dimmed
+         language: es
+    citations-hover: true
+    crossrefs-hover: true
+    title-block-style: manuscript  
+    repo-url: https://github.com/sociest/ue-report
+    repo-actions: [edit, issue]
   docx: default
   #pdf:
   #  toc: true
   #  number-sections: true
   #  colorlinks: true
   #jasa-pdf:
-  #  keep-tex: true    
-execute:
-  freeze: true
+  #  keep-tex: true
