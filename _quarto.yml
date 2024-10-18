@@ -36,9 +36,5 @@ format:
     repo-url: https://github.com/sociest/ue-report
     repo-actions: [edit, issue]
   docx: default
-  #pdf:
-  #  toc: true
-  #  number-sections: true
-  #  colorlinks: true
-  #jasa-pdf:
-  #  keep-tex: true
+  jasa-pdf:
+    keep-tex: true
